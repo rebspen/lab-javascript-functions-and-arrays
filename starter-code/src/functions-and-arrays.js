@@ -124,6 +124,19 @@ const wordsFind = [
   'disobedience'
 ];
 
+const doesWordExist = (arr,word) => {
+  if (arr === []){
+    return false;
+  }
+  for (i = 0 ; i < arr.length; i++){
+    if (word === arr[i]){
+      return true
+    }
+    }
+    return false;
+  }
+
+
 // Counting Repetition
 const wordsCount = [
   'machine',
@@ -138,6 +151,22 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
+
+const howManyTimes = (arr,word) => {
+  if (arr === []){
+    return [];
+  }
+  let count = 0;
+  for (i = 0 ; i < arr.length; i++){
+    if (word === arr[i]){
+      count += 1;
+    }
+  }
+  return count; 
+}
+
+
+
 
 // Bonus
 
